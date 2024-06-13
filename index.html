@@ -3,44 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Management</title>
-    <link rel="stylesheet" href="stayl.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
     <div class="container">
-        <h1>Booking Management</h1>
-        <form id="bookingForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required>
-            
-            <label for="time">Time:</label>
-            <input type="time" id="time" name="time" required>
-            
-            <label for="guests">Number of Guests:</label>
-            <input type="number" id="guests" name="guests" required>
-            
-            <button type="submit">Add Booking</button>
-        </form>
-        
-        <h2>Bookings</h2>
-        <table id="bookingsTable">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Date</th>
-                    <th>Time</th>
-                    <th>Guests</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-            </tbody>
-        </table>
+        <div id="photo-grid" class="photo-grid">
+            <div id="column-one" class="photo-grid-column"></div>
+            <div id="column-two" class="photo-grid-column"></div>
+            <div id="column-three" class="photo-grid-column"></div> 
+        </div>
     </div>
-    <script src="app.js"></script>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script/axios.js"></script>
+    <script src="./script/element.js"></script>
+    <script type="module" src="./script/app.js"></script>
+</body> 
 </html>
